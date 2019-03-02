@@ -1,7 +1,3 @@
-/*
- * ID test.
- */
-
 #include <iostream>
 #include <fstream>
 
@@ -9,17 +5,15 @@
 #include "Document.h"
 #include "Node.h"
 
- using std::string;
+using namespace std;
 
-int main(int argc, char * argv[])
-{
+int main(int argc, char * argv[]) {
+
 	string page(file_str("test_page.html"));
 
 	CDocument doc;
 	doc.parse(page.c_str());
 
-	CSelection c = doc.find("#start-of-content");
-	if(c.nodeNum() > 0)
-		return 0;
-	return 1;
+	CSelection c = doc.find("#test");
+	cout << c.nodeAt(0).attribute("href") << endl;
 }

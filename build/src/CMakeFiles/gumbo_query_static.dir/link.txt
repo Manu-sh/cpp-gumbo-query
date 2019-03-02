@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libgumbo_query_static.a  CMakeFiles/gumbo_query_static.dir/Document.cpp.o CMakeFiles/gumbo_query_static.dir/Node.cpp.o CMakeFiles/gumbo_query_static.dir/Object.cpp.o CMakeFiles/gumbo_query_static.dir/Parser.cpp.o CMakeFiles/gumbo_query_static.dir/QueryUtil.cpp.o CMakeFiles/gumbo_query_static.dir/Selection.cpp.o CMakeFiles/gumbo_query_static.dir/Selector.cpp.o
+/usr/bin/ranlib ../../lib/libgumbo_query_static.a
