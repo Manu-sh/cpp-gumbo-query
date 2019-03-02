@@ -23,14 +23,14 @@ find_path(Gumbo_INCLUDE_DIR
 
 # Finally the library itself
 find_library(Gumbo_LIBRARY
-  NAMES libgumbo.dylib libgumbo.dll gumbo.dylib gumbo.dll
+  NAMES libgumbo.so libgumbo.dylib libgumbo.dll gumbo.dylib gumbo.dll
   PATHS ${Gumbo_PKGCONF_LIBRARY_DIRS}
 )
 
-find_library(Gumbo_static_LIBRARY
-  NAMES libgumbo.a libgumbo_static.a gumbo.a gumbo_static.a libgumbo.lib libgumbo_static.lib gumbo.lib gumbo_static.lib
-  PATHS ${Gumbo_PKGCONF_LIBRARY_DIRS}
-)
+#find_library(Gumbo_static_LIBRARY
+#  NAMES libgumbo.a libgumbo_static.a gumbo.a gumbo_static.a libgumbo.lib libgumbo_static.lib gumbo.lib gumbo_static.lib
+#  PATHS ${Gumbo_PKGCONF_LIBRARY_DIRS}
+#)
 
 # Set the include dir variables and the libraries and let libfind_process do the rest.
 # NOTE: Singular variables for this library, plural for libraries this this lib depends on.
